@@ -41,5 +41,15 @@ header {
     color: white;
  }
  
+.talleres{
 
+   width: 280px;
+   height: 250px;
+   display: inline-block;
+   margin-right: 5%;
+   margin-bottom: 5%;
 
+}
+.talleres > img{
+margin-top: 0%;
+}
