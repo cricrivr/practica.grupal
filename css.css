@@ -39,3 +39,14 @@ header {
  .texto-header h1{
     color: white;
  }
+ .menu-horizontal{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+ }
+ .menu-horizontal > li  > a{
+    text-decoration: none;
+    padding: 15px 20px;
+
+
+ }
