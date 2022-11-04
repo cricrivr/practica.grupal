@@ -22,7 +22,7 @@
         
        
         <nav>
-            <a href="index.html">Inicio
+            <a href="index.php">Inicio
                 
                 <ul class="menu-horizontal">
                     <li>¿Quiénes somos?</li>
