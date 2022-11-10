@@ -6,7 +6,7 @@ header {
  background: -webkit-linear-gradient(to right, #4143455b, #23252668), url(../practica.grupal/imagenes/header.png);  /* Chrome 10-25, Safari 5.1-6 */
  background: linear-gradient(to right, #41434563, #23252670), url(../practica.grupal/imagenes/header.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
  background-attachment: fixed;
- background-size:auto ;
+ background-size:cover;
  position: relative;
  }
  nav{
