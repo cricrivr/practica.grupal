@@ -18,8 +18,9 @@ a{
     text-decoration: none;
     text-transform: capitalize;
     color: #000;
+    position:initial;
 }
-.logo{
+header .logo{
 
 font-weight: bolder;
 font-size: 25px;
@@ -75,3 +76,34 @@ top: 0;
 display: initial;
 
 }
+
+    @media (max-width: 900px) {
+    
+        header{
+        
+            padding: 20px;
+        }
+
+     .nav_bar{
+            align-items: center;
+            display: flex;
+            
+     }
+
+     .nav_bar ul li{
+        position: relative;
+      left: 0%;
+        margin-right: 30px;
+        }
+
+        .nav_bar ul li ul li ul {
+            left: 0;
+            top: 0;
+            
+            }
+            .nav_bar ul li:hover >ul{
+
+                
+                position:unset;
+                }
+    }        
