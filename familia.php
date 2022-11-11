@@ -14,14 +14,14 @@
 <header>
             
             <nav class="nav_bar">
-                <a class="logo" href="index.html">
+                <a class="logo" href="index.php">
                     <img src="imagenes/logo-1.png" width="85px" height="85px" alt="logo">
                     IPISA
                 </a>
     
     
                 <ul>
-                    <li><a href="index.html">Inicio +</a>
+                    <li><a href="index.php">Inicio +</a>
                         <ul>
                             <li><a href="index.php #1">¿Quiénes somos?</a></li>
                             <li><a href="index.php #2">Talleres y sus perfiles+</a>
