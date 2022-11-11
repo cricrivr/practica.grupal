@@ -111,16 +111,16 @@
 
             <label for="fecha">Fecha de nacimiento</label>
             <select name="year" id="">
-            <option value="0">0</option>
+            <option value="1600">-</option>
             <?php
-                $a = 0;
+                $a = 1600;
                     while($a <= 2022)
                     {
                     print "<option value='".$a."'>".$a."</option>";
                     $a++;
                     }
             ?>
-           <option value="2023" selected>2023</option>
+           <option value="2022" selected>2022</option>
         </select>
                  <select id="mes">
                     <option value="enero">enero</option>
