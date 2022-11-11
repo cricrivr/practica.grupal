@@ -29,11 +29,11 @@
                 <li><a href="index.html">Inicio +</a>
                     <ul>
                         <li><a href="index.html #1">¿Quiénes somos?</a></li>
-                        <li><a href="index.html #2">Tallerers y sus perfiles+</a>
+                        <li><a href="index.html #2">Talleres y sus perfiles+</a>
                         
                             <ul>
-                                <li><a href="index.html #3">Tallerres Industriales</a></li>
-                                <li><a href="index.html #4">Tallerers de Servicio</a></li>
+                                <li><a href="index.html #3">Talleres Industriales</a></li>
+                                <li><a href="index.html #4">Talleres de Servicio</a></li>
                             </ul>
                         
                         </li>
@@ -50,15 +50,15 @@
                 <li><a href="pasantia.html">Pasantia +</a>
                 
                     <ul>
-                        <li><a href="pasantia.html #1">¿que es el NFCT?</a></li>
-                        <li><a href="pasantia.html">HORAS POR TALLER</a></li>
+                        <li><a href="pasantia.html #1">Qué es el NFCT?</a></li>
+                        <li><a href="pasantia.html">Horas por taller</a></li>
                     </ul>
                 </li>
                 <li><a href="colaboradores.html">Colaboradores +</a>
                 
                     <ul>
-                        <li><a href="colaboradores.html #1">como ser un centro de trabajo</a></li>
-                        <li><a href="colaboradores.html #1">funciones de acuerdos</a></li>
+                        <li><a href="colaboradores.html #1">Cómo ser un centro de trabajo</a></li>
+                        <li><a href="colaboradores.html #1">Funciones de acuerdos</a></li>
                     </ul>
                 </li>
               
@@ -74,7 +74,180 @@
         
         
         </nav>
-    </header>    
+    </header>
+
+
+    <center>
+        <br>
+        <br>
+        <Label>Nombre de la empresa:</Label>
+        <br>
+        <INPUT TYPE="text" NAME="nombre">
+        <br>
+        <br>
+        
+        <Label>RNC:</Label>
+        <br>
+        <INPUT TYPE="text" NAME="rnc">
+        <br>
+        <br>
+        
+        
+        <Label>Desea que se conozca la identidad de su empresa?</Label>
+        <br>
+        <INPUT TYPE="radio" NAME="identidad" VALUE="Si" >SI
+        <INPUT TYPE="radio" NAME="identidad" VALUE="No">NO
+        <br>
+        <br>
+        
+        <Label>Dispone su empresa de un Departamento de Formación dentro de la empresa?</Label>
+        <br>
+        <INPUT TYPE="radio" NAME="depposesion" VALUE="Si" >SI
+        <INPUT TYPE="radio" NAME="depposesion" VALUE="No">NO
+        <br>
+        <br>
+        
+        <Label>Alcance de la empresa</Label>
+        <br>
+        <INPUT TYPE="radio" NAME="alcance" VALUE="Nacional/local">Nacional/local
+        <INPUT TYPE="radio" NAME="alcance" VALUE="Multinacional">Multinacional
+        <br>
+        <br>
+        
+        <Label>Actividad económica a la que se dedica la empresa</Label>
+        <br>
+        <TEXTAREA COLS="50" ROWS="4" NAME="comentario">
+        </TEXTAREA>
+        <br>
+        <br>
+        
+        <Label>Direccion:</Label>
+        <br>
+        <INPUT TYPE="text" NAME="direccion">
+        <br>
+        <br>
+        
+        <Label>Sector:</Label>
+        <br>
+        <INPUT TYPE="text" NAME="sector">
+        <br>
+        <br>
+        
+        <Label>Seccion:</Label>
+        <br>
+        <INPUT TYPE="text" NAME="seccion">
+        <br>
+        <br>
+        
+        <Label>Municipio:</Label>
+        <br>
+        <INPUT TYPE="text" NAME="municipio">
+        <br>
+        <br>
+        
+        
+        <Label>Provincia:</Label>
+        <br>
+        <SELECT NAME="provincia">
+        <OPTION VALUE="Santiago">Santiago
+        <OPTION VALUE="Santo Domingo">Santo Domingo
+        <OPTION VALUE="La vega">La vega
+        <OPTION VALUE="Azúa">Azúa
+        <OPTION VALUE="Baoruco">Baoruco
+        <OPTION VALUE="Barahona">Barahona
+        <OPTION VALUE="Dajabón">Dajabón
+        <OPTION VALUE="Distrito Nacional">Distrito Nacional
+        <OPTION VALUE="Duarte">Duarte
+        <OPTION VALUE="Elías Pina">Elías Pina
+        <OPTION VALUE="El Seibo">El Seibo
+        <OPTION VALUE="Espaillat">Espaillat
+        <OPTION VALUE="Hato Mayor">Hato Mayor
+        <OPTION VALUE="Independencia">Independencia
+        <OPTION VALUE="La Altagracia">La Altagracia
+        <OPTION VALUE="La Romana">La Romana
+        <OPTION VALUE="Maria Trinidad Sanchez">Maria Trinidad Sanchez
+        <OPTION VALUE="Monseñor Nouel">Monseñor Nouel
+        <OPTION VALUE="Monte Cristi">Monte Cristi
+        <OPTION VALUE="Monte Plata">Monte Plata
+        <OPTION VALUE="Pedernales">Pedernales
+        <OPTION VALUE="Peravia">Peravia
+        <OPTION VALUE="Puerto Plata">Puerto Plata
+        <OPTION VALUE="Salcedo">Salcedo
+        <OPTION VALUE="Samana">Samana
+        <OPTION VALUE="Sánchez Ramírez">Sánchez Ramírez
+        <OPTION VALUE="San Cristobal">San Cristobal
+        <OPTION VALUE="San Jose de Ocoa">San Jose de Ocoa
+        <OPTION VALUE="San Juan">San Juan
+        <OPTION VALUE="San Pedro de Macorís">San Pedro de Macorís
+        <OPTION VALUE="Santiago Rodríguez">Santiago Rodríguez
+        <OPTION VALUE="Valverde">Valverde
+        </SELECT>
+        <br>
+        <br>
+        
+        <Label>Pais donde opera la empresa:</Label>
+        <br>
+        <SELECT NAME="pais">
+        <OPTION VALUE="Republica Dominicana">Republica Dominicana
+        </SELECT>
+        <br>
+        <br>
+        
+        <Label>Telefono Principal:</Label>
+        <br>
+        <INPUT TYPE="text" NAME="telefono1">
+        <br>
+        <br>
+        
+        <Label>Telefono directo:</Label>
+        <br>
+        <INPUT TYPE="text" NAME="telefono2">
+        <br>
+        <br>
+        
+        <Label>Email:</Label>
+        <INPUT TYPE="text" NAME="email">
+        <br>
+        <br>
+        
+        <Label>Confirma tu email:</Label>
+        <INPUT TYPE="text" NAME="emailconf">
+        <br>
+        <br>
+        
+        <Label>Elija una contraseña:</Label>
+        <INPUT TYPE="password" NAME="contraseña">
+        <br>
+        <br>
+        
+        <Label>Confirme contraseña:</Label>
+        <INPUT TYPE="password" NAME="contraseñaconf">
+        <br>
+        <br>
+        
+        <br>
+        <Label>CONTACTO DENTRO DE LA EMPRESA</Label>
+        <br>
+        <br>
+        <Label>Telefono y ext.:</Label>
+        <INPUT TYPE="text" NAME="telcont">
+        <br>
+        <br>
+        
+        <Label>Correo:</Label>
+        <INPUT TYPE="text" NAME="correo">
+        <br>
+        <br>
+        
+        <INPUT TYPE="submit" VALUE="ENVIAR">
+        <br> <br> <br> <br>
+        
+        
+    </FORM>
+    </center>
+        
+
+
 
 
     <footer>

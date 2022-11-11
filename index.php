@@ -28,11 +28,11 @@
                 <li><a href="index.html">Inicio +</a>
                     <ul>
                         <li><a href="index.html #1">¿Quiénes somos?</a></li>
-                        <li><a href="index.html #2">Tallerers y sus perfiles+</a>
+                        <li><a href="index.html #2">Talleres y sus perfiles+</a>
                         
                             <ul>
-                                <li><a href="index.html #3">Tallerres Industriales</a></li>
-                                <li><a href="index.html #4">Tallerers de Servicio</a></li>
+                                <li><a href="index.html #3">Talleres Industriales</a></li>
+                                <li><a href="index.html #4">Talleres de Servicio</a></li>
                             </ul>
                         
                         </li>
@@ -49,15 +49,15 @@
                 <li><a href="pasantia.html">Pasantia +</a>
                 
                     <ul>
-                        <li><a href="pasantia.html #1">¿que es el NFCT?</a></li>
-                        <li><a href="pasantia.html">HORAS POR TALLER</a></li>
+                        <li><a href="pasantia.html #1">Qué es el NFCT?</a></li>
+                        <li><a href="pasantia.html">Horas por taller</a></li>
                     </ul>
                 </li>
                 <li><a href="colaboradores.html">Colaboradores +</a>
                 
                     <ul>
-                        <li><a href="colaboradores.html #1">como ser un centro de trabajo</a></li>
-                        <li><a href="colaboradores.html #1">funciones de acuerdos</a></li>
+                        <li><a href="colaboradores.html #1">Cómo ser un centro de trabajo</a></li>
+                        <li><a href="colaboradores.html #1">Funciones de acuerdos</a></li>
                     </ul>
                 </li>
               
@@ -81,7 +81,7 @@
         expansión y crecimiento en este tipo de modelo de educación, así como también, acorde a la
         vanguardia de los nuevos tiempos.</p>
 
-        <h2 class="titulo">TallHeres y su perfil:</h2>
+        <h2 class="titulo">Talleres y su perfil:</h2>
         <p class=" parrafo">
             Confección y patronaje: Realizar acabados de prendas de vestir. Seleccionar materiales y 
             equipos para el corte en la confección textil. Ejecutar cortes según un modelo textil 
