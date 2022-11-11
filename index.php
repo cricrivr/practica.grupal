@@ -61,7 +61,7 @@
                     </ul>
                 </li>
               
-                <li><a href="alumno.html">Alumno</a>
+                <li><a href="alumno.php">Alumno</a>
                 
                     <ul>
                         <li><a href="Empresa.html">Empresa</a></li>
@@ -166,8 +166,6 @@
     </CENTER>  
 
 
-
-
 <footer>
 
     <div class="container">	
@@ -190,7 +188,7 @@
              <li><a href="pasantia.html">Pasantía</a></li>
              <li><a href="colaboradores.html">Colaboradores</a></li>
              <li><a href="familia.html">Familia</a></li>
-             <li><a href="alumno.html">Alumno</a></li>
+             <li><a href="alumno.php">Alumno</a></li>
            </ul>
     </div>
       
@@ -217,8 +215,6 @@
     </div>
             
 </footer>
-
-
 
 
 </body>

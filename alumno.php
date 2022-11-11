@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alumno</title>
-
     <link rel="icon" href="imagenes/logo-1.png">
-
     <link rel="stylesheet" href="menu.css">
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="footer.css">
@@ -118,12 +116,18 @@
             <label for="apellidos">Apellidos: </label><input type="text"><br> <br>
 
             <label for="fecha">Fecha de nacimiento</label>
-                        <select id="ano">
-                     <option value="">Volvo</option>
-                 <option value="saab">Saab</option>
-                <option value="opel">Opel</option>
-                 <option value="audi">Audi</option>
-                 </select>
+            <select name="year" id="">
+            <option value="0">0</option>
+            <?php
+                $a = 0;
+                    while($a <= 2022)
+                    {
+                    print "<option value='".$a."'>".$a."</option>";
+                    $a++;
+                    }
+            ?>
+           <option value="2023" selected>2023</option>
+        </select>
                  <select id="mes">
                     <option value="enero">enero</option>
                 <option value="febrero">febrero</option>
@@ -232,6 +236,71 @@
         </center>
             
             </form>
+
+            <footer>
+
+                <div class="container">	
+                    <div class="sec aboutus">
+                        <h2>Sobre nosotros</h2>
+                                <p>Somos una institución educativa técnico profesional con uno de los más altos niveles 
+                                de expansión y crecimiento en este tipo de modelo de educación, así como también, acorde 
+                                a la vanguardia de los nuevos tiempos.</p>
+                        <ul class="redes">
+                         <li><a href="https://www.facebook.com/Bibliotecamp/"><i class="fab fa-facebook-square"></i></a></li>
+                         <li><a href="https://www.instagram.com/biblioteca_mp/"><i class="fab fa-instagram-square"></i></a></li>
+                         <link rel="stylesheet" type="text/css" href="css/css-footer.css">
+                        </ul>
+                </div>
+                  
+                <div class="sec quickLinks">
+                    <h2>Enlaces rápidos</h2>
+                       <ul>
+                         <li><a href="index.html">Inicio</a></li>
+                         <li><a href="pasantia.html">Pasantía</a></li>
+                         <li><a href="colaboradores.html">Colaboradores</a></li>
+                         <li><a href="familia.html">Familia</a></li>
+                         <li><a href="alumno.html">Alumno</a></li>
+                       </ul>
+                </div>
+                  
+                <div class= "sec contact">
+                    <h2>Contacto</h2>
+                       <ul class="info">
+                         <li>
+                         <span><i class="fas fa-map-marker-alt"></i></span>
+                         <span>Av. Hispanoamericana, Km 1 <br>
+                          Santiago,<br>República Dominicana</span>
+                         </li>
+                        <li>
+                         <span><i class="fas fa-phone-alt"></i></span>
+                         <p><a href="tel:8293762176">+1 809 724 5700</a><br></p>
+                        </li>
+                        <li>
+                         <span></span>
+                         <p><a href="https://www.instagram.com/ipisasdb/?igshid=YmMyMTA2M2Y%3D">Instagram</a><br></p>
+                        </li>
+                        <li>
+                         <span></span>
+                         <p><a href="https://www.facebook.com/IPISASDB">Facebook</a><br></p>
+                        </li>        
+                </div>
+            </div>
+            </footer>
+
+
+ <?php
+require "conexion.php";
+insertar($mysqli);
+function insertar  ($mysqli) {
+  $nom = $_POST['nombre']?? null;
+  $pass = $_POST['contrasena']?? null;
+  $nac = $_POST['nacimiento']?? null;
+
+$consulta =  "INSERT INTO alumno_dapersonales(nombre, contrasena, nacimiento) VALUES ('$nom', '$pass', '$nac')";
+mysqli_query($mysqli, $consulta);
+mysqli_close($mysqli);
+}
+ ?>
 
 </body>
 </html>
