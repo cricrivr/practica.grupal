@@ -27,45 +27,45 @@
             <ul>
                 <li><a href="index.html">Inicio +</a>
                     <ul>
-                        <li><a href="index.html #1">¿Quiénes somos?</a></li>
-                        <li><a href="index.html #2">Talleres y sus perfiles+</a>
+                        <li><a href="index.php #1">¿Quiénes somos?</a></li>
+                        <li><a href="index.php #2">Talleres y sus perfiles+</a>
                         
                             <ul>
-                                <li><a href="index.html #3">Talleres Industriales</a></li>
-                                <li><a href="index.html #4">Talleres de Servicio</a></li>
+                                <li><a href="index.php #3">Talleres Industriales</a></li>
+                                <li><a href="index.php #4">Talleres de Servicio</a></li>
                             </ul>
                         
                         </li>
                     </ul>
                 
                 </li>
-                <li><a href="familia.html">Familia +</a>
+                <li><a href="familia.php">Familia +</a>
                     <ul>
-                        <li><a href="familia.html #1">Responsabilidades</a></li>
-                        <li><a href="familia.html #2">Acuerdos</a></li>
+                        <li><a href="familia.php #1">Responsabilidades</a></li>
+                        <li><a href="familia.php #2">Acuerdos</a></li>
                     </ul>
                 
                 </li>
-                <li><a href="pasantia.html">Pasantia +</a>
+                <li><a href="pasantia.php">Pasantia +</a>
                 
                     <ul>
-                        <li><a href="pasantia.html #1">Qué es el NFCT?</a></li>
-                        <li><a href="pasantia.html">Horas por taller</a></li>
+                        <li><a href="pasantia.php #1">Qué es el NFCT?</a></li>
+                        <li><a href="pasantia.php">Horas por taller</a></li>
                     </ul>
                 </li>
-                <li><a href="colaboradores.html">Colaboradores +</a>
+                <li><a href="colaboradores.php">Colaboradores +</a>
                 
                     <ul>
-                        <li><a href="colaboradores.html #1">Cómo ser un centro de trabajo</a></li>
-                        <li><a href="colaboradores.html #1">Funciones de acuerdos</a></li>
+                        <li><a href="colaboradores.php #1">Cómo ser un centro de trabajo</a></li>
+                        <li><a href="colaboradores.php #1">Funciones de acuerdos</a></li>
                     </ul>
                 </li>
               
                 <li><a href="alumno.php">Alumno</a>
                 
                     <ul>
-                        <li><a href="Empresa.html">Empresa</a></li>
-                        <li><a href="vacantes.html">Vacantes</a></li>
+                        <li><a href="Empresa.php">Empresa</a></li>
+                        <li><a href="vacantes.php">Vacantes</a></li>
                     </ul>
                 
                 </li>
