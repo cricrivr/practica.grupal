@@ -24,15 +24,16 @@
                 IPISA
             </a>
 
+
             <ul>
                 <li><a href="index.html">Inicio +</a>
                     <ul>
                         <li><a href="index.html #1">¿Quiénes somos?</a></li>
-                        <li><a href="index.html #2">Tallerers y sus perfiles+</a>
+                        <li><a href="index.html #2">Talleres y sus perfiles+</a>
                         
                             <ul>
-                                <li><a href="index.html #3">Tallerres Industriales</a></li>
-                                <li><a href="index.html #4">Tallerers de Servicio</a></li>
+                                <li><a href="index.html #3">Talleres Industriales</a></li>
+                                <li><a href="index.html #4">Talleres de Servicio</a></li>
                             </ul>
                         
                         </li>
@@ -49,15 +50,15 @@
                 <li><a href="pasantia.html">Pasantia +</a>
                 
                     <ul>
-                        <li><a href="pasantia.html #1">¿que es el NFCT?</a></li>
-                        <li><a href="pasantia.html">HORAS POR TALLER</a></li>
+                        <li><a href="pasantia.html #1">Qué es el NFCT?</a></li>
+                        <li><a href="pasantia.html">Horas por taller</a></li>
                     </ul>
                 </li>
                 <li><a href="colaboradores.html">Colaboradores +</a>
                 
                     <ul>
-                        <li><a href="colaboradores.html #1">como ser un centro de trabajo</a></li>
-                        <li><a href="colaboradores.html #1">funciones de acuerdos</a></li>
+                        <li><a href="colaboradores.html #1">Cómo ser un centro de trabajo</a></li>
+                        <li><a href="colaboradores.html #1">Funciones de acuerdos</a></li>
                     </ul>
                 </li>
               
@@ -73,7 +74,8 @@
         
         
         </nav>
-    </header>    
+    </header>
+
     <a download="guia" href="https://drive.google.com/file/d/1i6E4VHON6un1u7F-UrNAAD1e4H2MuSwy/view?usp=share_link">Descarga el documento</a>
     <h2>Acuerdos</h2>
 
