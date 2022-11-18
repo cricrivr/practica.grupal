@@ -78,6 +78,9 @@
 
 
     <center>
+
+    <FORM ACTION="insert.php" METHOD="POST">
+
         <br>
         <br>
         <Label>Nombre de la empresa:</Label>
