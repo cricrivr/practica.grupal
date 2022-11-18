@@ -19,5 +19,5 @@ $consulta =  "INSERT INTO `ipisa_pag`.`vacantes` (`id_empresa`, `nom_puesto`, `f
                
                 
 
-            //header("location: vacantes.php?insert=success");
+            header("location: vacantes.php?insert=success");
             ?>
