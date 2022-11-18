@@ -79,13 +79,13 @@
 
     <center>
 
-    <FORM ACTION="insert.php" METHOD="POST">
+    <FORM ACTION="insert_empresa.php" METHOD="POST">
 
         <br>
         <br>
         <Label>Nombre de la empresa:</Label>
         <br>
-        <INPUT TYPE="text" NAME="nombre">
+        <INPUT TYPE="text" NAME="nom">
         <br>
         <br>
         
@@ -98,60 +98,72 @@
         
         <Label>Desea que se conozca la identidad de su empresa?</Label>
         <br>
-        <INPUT TYPE="radio" NAME="identidad" VALUE="Si" >SI
-        <INPUT TYPE="radio" NAME="identidad" VALUE="No">NO
+        <INPUT TYPE="radio" NAME="iden" VALUE="1" >SI
+        <INPUT TYPE="radio" NAME="iden" VALUE="0">NO
         <br>
         <br>
         
         <Label>Dispone su empresa de un Departamento de Formación dentro de la empresa?</Label>
         <br>
-        <INPUT TYPE="radio" NAME="depposesion" VALUE="Si" >SI
-        <INPUT TYPE="radio" NAME="depposesion" VALUE="No">NO
+        <INPUT TYPE="radio" NAME="dep" VALUE="1" >SI
+        <INPUT TYPE="radio" NAME="dep" VALUE="0">NO
         <br>
         <br>
         
         <Label>Alcance de la empresa</Label>
         <br>
-        <INPUT TYPE="radio" NAME="alcance" VALUE="Nacional/local">Nacional/local
-        <INPUT TYPE="radio" NAME="alcance" VALUE="Multinacional">Multinacional
+        <INPUT TYPE="radio" NAME="alcance" VALUE="0">Nacional/local
+        <INPUT TYPE="radio" NAME="alcance" VALUE="1">Multinacional
         <br>
         <br>
         
         <Label>Actividad económica a la que se dedica la empresa</Label>
         <br>
-        <TEXTAREA COLS="50" ROWS="4" NAME="comentario">
+        <TEXTAREA COLS="50" ROWS="4" NAME="act_e">
         </TEXTAREA>
         <br>
         <br>
-        
+        <label >taller tipo:</label>
+        <select name="indu">
+
+        <option value="1">industrial</option>
+        <option value="0">servicios</option>
+        </select>
+        <br><br>
+
+        <Label>Tamaño:</Label>
+        <br>
+        <INPUT TYPE="text" NAME="tam">
+        <br>
+        <br>
         <Label>Direccion:</Label>
         <br>
-        <INPUT TYPE="text" NAME="direccion">
+        <INPUT TYPE="text" NAME="dire">
         <br>
         <br>
         
         <Label>Sector:</Label>
         <br>
-        <INPUT TYPE="text" NAME="sector">
+        <INPUT TYPE="text" NAME="sec">
         <br>
         <br>
         
         <Label>Seccion:</Label>
         <br>
-        <INPUT TYPE="text" NAME="seccion">
+        <INPUT TYPE="text" NAME="secc">
         <br>
         <br>
         
         <Label>Municipio:</Label>
         <br>
-        <INPUT TYPE="text" NAME="municipio">
+        <INPUT TYPE="text" NAME="muni">
         <br>
         <br>
         
         
         <Label>Provincia:</Label>
         <br>
-        <SELECT NAME="provincia">
+        <SELECT NAME="prov">
         <OPTION VALUE="Santiago">Santiago
         <OPTION VALUE="Santo Domingo">Santo Domingo
         <OPTION VALUE="La vega">La vega
@@ -192,24 +204,28 @@
         <br>
         <SELECT NAME="pais">
         <OPTION VALUE="Republica Dominicana">Republica Dominicana
+        <OPTION VALUE="Republica de Haiti">haiti
+        <OPTION VALUE=" Puerto Rico"> Puerto Rico
+        <OPTION VALUE=" Cuba ">Cuba 
+        <OPTION VALUE=" Jamaica">Jamaica 
         </SELECT>
         <br>
         <br>
         
         <Label>Telefono Principal:</Label>
         <br>
-        <INPUT TYPE="text" NAME="telefono1">
+        <INPUT TYPE="text" NAME="telf1">
         <br>
         <br>
         
         <Label>Telefono directo:</Label>
         <br>
-        <INPUT TYPE="text" NAME="telefono2">
+        <INPUT TYPE="text" NAME="telf2">
         <br>
         <br>
         
         <Label>Email:</Label>
-        <INPUT TYPE="text" NAME="email">
+        <INPUT TYPE="text" NAME="mail">
         <br>
         <br>
         
@@ -219,12 +235,12 @@
         <br>
         
         <Label>Elija una contraseña:</Label>
-        <INPUT TYPE="password" NAME="contraseña">
+        <INPUT TYPE="password" NAME="contra">
         <br>
         <br>
         
         <Label>Confirme contraseña:</Label>
-        <INPUT TYPE="password" NAME="contraseñaconf">
+        <INPUT TYPE="password" NAME="contraconf">
         <br>
         <br>
         
@@ -232,8 +248,10 @@
         <Label>CONTACTO DENTRO DE LA EMPRESA</Label>
         <br>
         <br>
-        <Label>Telefono y ext.:</Label>
-        <INPUT TYPE="text" NAME="telcont">
+        <Label>Telefono:</Label>
+        <INPUT TYPE="text" NAME="telf3">
+        <Label>extencion :</Label>
+        <INPUT TYPE="text" NAME="ext">
         <br>
         <br>
         
