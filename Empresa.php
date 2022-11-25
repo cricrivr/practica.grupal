@@ -271,7 +271,7 @@
     
     <h2>Editar Clientes</h2>
 
-    <form action="update.php" method="POST">
+    <form action="editar_m.php" method="POST">
         <input type="text" name='id' placeholder="ID">
         <button type="submit" name="update">Editar</button>
     </form>
