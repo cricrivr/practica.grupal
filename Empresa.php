@@ -333,7 +333,7 @@ $total = mysqli_num_rows($data);
 if ($total!=0) {
     while ($row=mysqli_fetch_assoc($data)) {
         echo "<tr>
-        <td>" . $row['id'] . "</td>
+        <td  >" . $row['id'] . "</td>
         <td>" . $row['nom_empresa'] . "</td>
         <td>" . $row['RNC'] . "</td>
         <td>" . $row['identidad'] . "</td>

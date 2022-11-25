@@ -78,8 +78,30 @@
 
         <form action="insert_vacante.php" method="post" >
             <label >Empresa: </label>
-            <input type="text" name="empr"><br> <br>
+
             
+            <select name="empr" >
+<?php
+
+include_once "conexion_o.php";
+
+$query= "SELECT id,nom_empresa FROM empresa; ";
+$data = mysqli_query($mysqli, $query);
+$total = mysqli_num_rows($data);
+
+
+if ($total!=0) {
+    while ($row=mysqli_fetch_assoc($data)) {
+        print "<option value= '".$row['id']."'> ".$row['nom_empresa']." </option>";
+       
+    }
+}
+
+?>
+
+
+</select>  <br><br>
+
             <label >Nombre del puesto: </label>
             <input type="text" name="nomb"><br> <br>
             
@@ -135,17 +157,17 @@
         
         </form>
 
-<form action="delete_vacante.php" method="post">
+<form action="delete_vacante.php" method="POST">
     <h1>eliminacion de vacantes</h1>
 <label >ID de la vacante a eliminar</label>
-<input type="text" name="id_v">
+<input type="text" name="id">
 <br><br>
 <button>eliminar</button>
 </form>
 <br><br><br>
 
 
-<form action="update_vacantes.php" method="GET">
+<form action="update_vacantes.php" method="POST">
     <h1>Actualizacion de vacantes</h1>
 <label >ID de la vacante a actualizar</label>
 <input type="text" name="id">
@@ -155,13 +177,77 @@
 <br><br><br>
 
 
-<form action="buscar_vacantes.php" method="GET">
-    <h1>Actualizacion de vacantes</h1>
+<form action="buscar_vacantes.php" method="POST">
+    <h1>Busqueda de vacantes</h1>
 <label >ID de la vacante a buscar</label>
 <input type="text" name="id">
 <br><br>
 <button>buscar</button>
 </form>
+
+<table border="2">
+        <tr>
+            <td name="ID">ID
+           </td>
+            <td>Empresa
+           </td>
+            <td>nombre del puesto
+           </td>
+            <td>funcion del puesto
+           </td>
+            <td>sueldo
+           </td>
+            <td>tipo Contrato
+           </td>
+            <td>correo curriculum
+           </td>
+            <td>persona de contacto
+           </td>
+            <td>telefono
+           </td>
+            <td>horario
+          </td>
+            
+        </tr>
+<?php
+include_once "conexion_o.php";
+
+$query= "SELECT * FROM ipisa_pag.buscar_vacantes; ";
+$data = mysqli_query($mysqli, $query);
+$total = mysqli_num_rows($data);
+
+if ($total!=0) {
+    while ($row=mysqli_fetch_assoc($data)) {
+        echo "<tr>
+        <td name='id' >" . $row['ID'] . "</td>
+        <td>" . $row['empresa'] . "</td>
+        <td>" . $row['nombre del puesto'] . "</td>
+        <td>" . $row['funcion del puesto'] . "</td>
+        <td>" . $row['sueldo'] . "</td>
+        <td>" . $row['tipo contrato'] . "</td>
+        <td>" . $row['correo curriculum'] . "</td>
+        <td>" . $row['persona de contacto'] . "</td>
+        <td>" . $row['telefono'] . "</td>
+        <td>" . $row['horario'] . "</td>
+        <td> <a href='delete_vacante.php?id=$row[ID]'>Borrar</td>
+        <td> <a href='update_vacantes.php?id=$row[ID]'>actualizar</td>
+
+        </tr>";
+    }
+}   else
+    ?>
+    <script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Nombre o ID invalido',
+            text: 'Registro no encontrado, Revise los datos introducidos'
+        }).then(function () {
+            window.location.href = "index.php"
+        })
+    </script>
+
+    </table>
+
 
 
 

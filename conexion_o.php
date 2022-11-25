@@ -15,12 +15,12 @@
   echo "fallo al conectar a mysql: (".$mysqli->connect_errno.")".$mysqli->connect_error;
 
   }
-
+/*
   echo 'Success: A proper connection to MySQL was made.';
   echo '<br>';
   echo 'Host information: '.$mysqli->host_info;
   echo '<br>';
   echo 'Protocol version: '.$mysqli->protocol_version;
-
+*/
 
 ?>
