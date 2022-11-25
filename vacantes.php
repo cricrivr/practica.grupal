@@ -134,6 +134,37 @@
             <button>enviar</button>
         
         </form>
+
+<form action="delete_vacante.php" method="post">
+    <h1>eliminacion de vacantes</h1>
+<label >ID de la vacante a eliminar</label>
+<input type="text" name="id_v">
+<br><br>
+<button>eliminar</button>
+</form>
+<br><br><br>
+
+
+<form action="update_vacantes.php" method="GET">
+    <h1>Actualizacion de vacantes</h1>
+<label >ID de la vacante a actualizar</label>
+<input type="text" name="id">
+<br><br>
+<button>actualizar</button>
+</form>
+<br><br><br>
+
+
+<form action="buscar_vacantes.php" method="GET">
+    <h1>Actualizacion de vacantes</h1>
+<label >ID de la vacante a buscar</label>
+<input type="text" name="id">
+<br><br>
+<button>buscar</button>
+</form>
+
+
+
         </center>
 
             <footer>
