@@ -34,7 +34,7 @@
             <th>Tel_completo</th>
         </tr>
 <?php
-require("conexion_m.php");
+require("connection.php");
 $nombre=$_REQUEST["nom_empresa"];
 $query= "SELECT * FROM empresa WHERE nom_empresa LIKE '%$nombre%' or id='$nombre'";
 $data = mysqli_query($conexion, $query);

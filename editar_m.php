@@ -1,6 +1,6 @@
 <?php
 
-include_once 'conexion_m.php';
+include_once 'connection.php';
 
 $cod = $_POST['id'];
 $nom = $_POST['nom'];
@@ -32,19 +32,19 @@ $ext = $_POST['ext'];
 $correo_cont = $_POST['correo'];
 
 
-$update="UPDATE empresa SET nom_empresa='$nom', RNC='$rnc', identidad='$iden', dep_formacion='$dep', 
+$query ="UPDATE empresa SET nom_empresa='$nom', RNC='$rnc', identidad='$iden', dep_formacion='$dep', 
 alcance='$alcance', act_economica='$act_eco', indrustria='$ind', tamaño='$tamn', direccion='$direccion', 
 sector='$sector', seccion='$seccion', municipio='$municipio', provincia='$provincia', pais_operador='$pais', 
 tel_principal='$tel_prin', tel_directo='$tel_direc', email='$email', contraseña='$contra', 
-telf_cont='$tel_cont', ext='$ext', correo='$correo_cont' WHERE id='$cod'"
+telf_cont='$tel_cont', ext='$ext', correo='$correo_cont' WHERE id='$cod'";
 
 
-mysqli_query($conexion, $update);
-mysqli_close($conexion);
+mysqli_query($mysqli, $query);
+mysqli_close($mysqli);
 
 header("location: empresa.php?update=success");
 
-$conexion->close();
+$mysqli->close();
 ?>
 
 ?>

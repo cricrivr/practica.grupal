@@ -324,10 +324,10 @@
 
 
 <?php
-require("conexion_m.php");
+require("connection.php");
 
 $query= "SELECT * FROM empresa";
-$data = mysqli_query($conexion, $query);
+$data = mysqli_query($mysqli, $query);
 $total = mysqli_num_rows($data);
 
 if ($total!=0) {

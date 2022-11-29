@@ -1,6 +1,6 @@
 <?php
 
-include_once 'conexion_o.php';
+include_once 'connection.php';
 
 $id = $_REQUEST['id_va'];
 $empresa = $_REQUEST['empr'];

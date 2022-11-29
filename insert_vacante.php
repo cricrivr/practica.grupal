@@ -1,5 +1,5 @@
 <?php
-         include_once 'conexion_o.php';
+         include_once 'connection.php';
 
                   $empresa = $_REQUEST['empr'];
                   $puesto = $_REQUEST['nomb'];

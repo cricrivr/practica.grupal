@@ -32,7 +32,7 @@
             
         </tr>
 <?php
-include_once "conexion_o.php";
+include_once "connection.php";
 $id=$_REQUEST['id'];
 $query= "SELECT * FROM ipisa_pag.buscar_vacantes where ID= $id; ";
 $data = mysqli_query($mysqli, $query);

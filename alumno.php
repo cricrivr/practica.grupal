@@ -283,15 +283,15 @@
 
 
  <?php
-require "conexion.php";
+require "connection.php";
 insertar($mysqli);
 function insertar  ($mysqli) {
   $nom = $_POST['nombre']?? null;
   $pass = $_POST['contrasena']?? null;
   $nac = $_POST['nacimiento']?? null;
 
-$consulta =  "INSERT INTO alumno_dapersonales(nombre, contrasena, nacimiento) VALUES ('$nom', '$pass', '$nac')";
-mysqli_query($mysqli, $consulta);
+$query =  "INSERT INTO alumno_dapersonales(nombre, contrasena, nacimiento) VALUES ('$nom', '$pass', '$nac')";
+mysqli_query($mysqli, $query);
 mysqli_close($mysqli);
 }
  ?>

@@ -83,7 +83,7 @@
             <select name="empr" >
 <?php
 
-include_once "conexion_o.php";
+include_once "connection.php";
 
 $query= "SELECT id,nom_empresa FROM empresa; ";
 $data = mysqli_query($mysqli, $query);
@@ -210,7 +210,7 @@ if ($total!=0) {
             
         </tr>
 <?php
-include_once "conexion_o.php";
+include_once "connection.php";
 
 $query= "SELECT * FROM ipisa_pag.buscar_vacantes; ";
 $data = mysqli_query($mysqli, $query);

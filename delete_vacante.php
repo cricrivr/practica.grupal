@@ -1,5 +1,5 @@
 <?php
-include_once 'conexion_o.php';
+include_once 'connection.php';
 
 $id = $_REQUEST['id'];
 $query = "DELETE FROM vacantes WHERE id_vacante=$id";
