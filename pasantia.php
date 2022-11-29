@@ -94,7 +94,21 @@
              </li><li>Hacer partícipe a los centros de trabajo del proceso de enseñanza-aprendizajeen la actividad docente.
             </li> </ul></p>
 </div>
+<div class="diseño">
+<h2 class="titulo">Duracion del modulo de formacion en centro de trabajo por taller  </h2>
 
+
+<ul>
+    <li><b>Confeccion Y Patronaje</b>:720</li>
+    <li><b>Electro Mecanica de Vehiculos</b>:720</li>
+    <li><b>Mecanica Industrial(Mecanizado)</b>:720</li>
+    <li><b>Equipos Electrónicos</b>:360</li>
+    <li><b>Instalaciones Electricas</b>:360</li>
+    <li><b>Muebles y Estructura de la madera</b>:360</li>
+    <li><b>Desarrollo y Administracion de Aplicaicones Informaticas</b>:360</li>
+    <li><b>Gestion Administrativa y Tributaria</b>:360</li>
+</ul>
+</div>
 
 
 <footer>
