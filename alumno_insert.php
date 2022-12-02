@@ -39,8 +39,8 @@ $query =  "INSERT INTO `ipisa_pag`.`alumno`
     '$p', '$q', '$r', '$s', '$t', '$u', '$v', '$w');
 ";
                 mysqli_query($mysqli, $query);
-          echo $query;     
+           
                 
 
-      // header("location: alumno.php?insert=success");
+     header("location: alumno.php?insert=success");
             ?>
