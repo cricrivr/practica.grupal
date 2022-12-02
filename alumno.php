@@ -250,7 +250,7 @@
             
             <input type="submit" value="enviar">
             
-        </center>
+        
             
             </form>
             <form action="alumnos_delete.php" method="POST">
@@ -279,7 +279,7 @@
 <input type="text" name="id">
 <br><br>
 <button>buscar</button>
-</form>
+</form></center>
 
     <table border="2">
         <tr>
