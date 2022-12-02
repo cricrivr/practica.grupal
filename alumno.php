@@ -289,9 +289,8 @@ function insertar  ($mysqli) {
   $pass = $_POST['contrasena']?? null;
   $nac = $_POST['nacimiento']?? null;
 
-$query =  "INSERT INTO alumno_dapersonales(nombre, contrasena, nacimiento) VALUES ('$nom', '$pass', '$nac')";
-mysqli_query($mysqli, $query);
-mysqli_close($mysqli);
+$query =  "INSERT INTO alumno_dapersonales(nombre, contrasena, nacimiento) VALUES ('$nom', '$pass', '$nac');";
+mysqli_query($mysqli,$query);
 }
  ?>
 

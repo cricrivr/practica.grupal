@@ -271,7 +271,7 @@
     
     <h2>Editar Clientes</h2>
 
-    <form action="editar_m.php" method="POST">
+    <form action="editar_empresa.php" method="POST">
         <input type="text" name='id' placeholder="ID">
         <button type="submit">Editar</button>
     </form>
@@ -324,7 +324,7 @@
 
 
 <?php
-require("connection.php");
+require_once "connection.php";
 
 $query= "SELECT * FROM empresa";
 $data = mysqli_query($mysqli, $query);
@@ -333,7 +333,7 @@ $total = mysqli_num_rows($data);
 if ($total!=0) {
     while ($row=mysqli_fetch_assoc($data)) {
         echo "<tr>
-        <td  >" . $row['id'] . "</td>
+        <td>" . $row['id'] . "</td>
         <td>" . $row['nom_empresa'] . "</td>
         <td>" . $row['RNC'] . "</td>
         <td>" . $row['identidad'] . "</td>
