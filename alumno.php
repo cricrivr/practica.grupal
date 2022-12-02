@@ -76,24 +76,29 @@
 
 <center>
 
-        <form action="" method="post" >
+        <form action="alumno_insert.php" method="POST" >
 
 
-            <label for="graduacion">Año de graduacion: </label><input type="text"><br> <br>
+            <label for="graduacion">Año de graduacion: </label>
+            <input type="text" id="graduacion" name="grad"><br> <br>
             
-            <label for="inst">Institución eduactiva a la que pertenece: </label><input type="text"><br> <br>
+            <label for="inst">Institución eduactiva a la que pertenece: </label>
+            <input type="text" id="inst" name="insti"><br> <br>
             
-            <label for="curso">Curso: </label><input type="text"><br> <br>
+            <label for="curso">Curso: </label>
+            <input type="text" id="curso" name="cur"><br> <br>
 
-            <label for="matricula">Matrícula: </label><input type="text"><br> <br>
+            <label for="matricula">Matrícula: </label>
+            <input type="text" id="matricula" name="mat"><br> <br>
 
-            <label for="cedula">Cédula de identidad: </label><input type="text"><br> <br>
+            <label for="cedula">Cédula de identidad: </label>
+            <input type="text" id="cedula" name="ced"><br> <br>
 
-            <label for="carreratec">Carrera técnica: 
-                <select id="carrera">
-                    <option value="vacio"></option>
+            <label >Carrera técnica: 
+            <select name="carrera">
+                <option value="vacio"></option>
                 <option value="info">Desarrollo y administración de aplicaciones informáticas</option>
-               <option value="eba">Muebles y estructura de la madera</option>
+                <option value="eba">Muebles y estructura de la madera</option>
                 <option value="eldad">Electricidad</option>
                 <option value="elca">Electrónica</option>
                 <option value="gat">Gestión administrativa y tributaria</option>
@@ -103,79 +108,82 @@
             </select>
             </label><br> <br>
 
-            <label for="tecbasico">Técnico básico: </label><input type="text"><br> <br>
+            <label for="tecbasico">Técnico básico: </label>
+            <input type="text" id="tecbasico" name="tbas"><br> <br>
 
-            <label for="nom">Nombres: </label><input type="text"><br> <br>
+            <label for="nombres">Nombres: </label>
+            <input type="text" id="nombres" name="nom"><br> <br>
 
-            <label for="apellidos">Apellidos: </label><input type="text"><br> <br>
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" id="apellidos" name="ape"><br> <br>
 
-            <label for="fecha">Fecha de nacimiento</label>
-            <select name="year" id="">
-            <option value="1600">-</option>
-            <?php
-                $a = 1600;
-                    while($a <= 2022)
-                    {
-                    print "<option value='".$a."'>".$a."</option>";
-                    $a++;
-                    }
-            ?>
-           <option value="2022" selected>2022</option>
-        </select>
-                 <select id="mes">
-                    <option value="enero">enero</option>
-                <option value="febrero">febrero</option>
-               <option value="marzo">marzo</option>
-                <option value="abril">abril</option>
-                <option value="mayo">mayo</option>
-                <option value="junio">junio</option>
-                <option value="julio">julio</option>
-                <option value="agosto">agosto</option>
-                <option value="septiembre">septiembre</option>
-                <option value="octubre">octubre</option>
-                <option value="novimbre">noviembre</option>
-                <option value="diciembre">diciembre</option>
-                </select>
-                <select id="dia">
-                    <option value="2">01</option>
-                <option value="02">02</option>
-               <option value="03">03</option>
-                <option value="04">04</option>
-                <option value="05">05</option>
-                <option value="06">06</option>
-                <option value="06">07</option>
-                <option value="08">08</option>
-                <option value="09">09</option>
-                <option value="10">10</option>
-                <option value="11">12</option>
-                <option value="12">12</option>
-                <option value="13">13</option>
-                <option value="14">14</option>
-                <option value="15">15</option>
-                <option value="16">16</option>
-                <option value="17">17</option>
-                <option value="18">18</option>
-                <option value="19">19</option>
-                <option value="20">20</option>
-                <option value="21">21</option>
-                <option value="22">22</option>
-                <option value="23">23</option>
-                <option value="24">24</option>
-                <option value="25">25</option>
-                <option value="26">26</option>
-                <option value="27">27</option>
-                <option value="28">28</option>
-                <option value="29">29</option>
-                <option value="30">30</option>
-                <option value="31">31</option>
+            <label >Fecha de nacimiento</label>
+            <select name="year" >
+                <option value="1600">-</option>
+                <?php
+                    $a = 1600;
+                        while($a <= 2022)
+                        {
+                        print "<option value='".$a."'>".$a."</option>";
+                        $a++;
+                        }
+                ?>
+                option value="2022" selected>2022</option>
+            </select>
+            <select name="mes">
+                    <option value="01">enero</option>
+                    <option value="02">febrero</option>
+                    <option value="03">marzo</option>
+                    <option value="04">abril</option>
+                    <option value="05">mayo</option>
+                    <option value="06">junio</option>
+                    <option value="07">julio</option>
+                    <option value="08">agosto</option>
+                    <option value="09">septiembre</option>
+                    <option value="10">octubre</option>
+                    <option value="11">noviembre</option>
+                    <option value="12">diciembre</option>
+            </select>
+            <select name="dia">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="06">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">12</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
 
 
-                </select>
+            </select>
 
                 <br> <br>
 
             <label for="sexo">sexo: 
-                <select id="sexo">
+                <select id="sexo" name="sex">
                     <option value="fem">femenino</option>
                 <option value="masc">masculino</option>
                <option value="ni">prefiero no decirlo</option>
@@ -183,18 +191,24 @@
             </label>
             <br> <br>
 
-            <label for="dir">Dirección: </label><input type="text"><br> <br>
+            <label for="direccion">Dirección: </label>
+            <input type="text" id="direccion" name="dir"><br> <br>
 
-            <label for="sector">Sector: </label><input type="text"><br> <br>
 
-            <label for="seccion">Sección: </label><input type="text"><br> <br>
+            <label for="sector">Sector: </label>
+            <input type="text" id="sector" name="sect"><br> <br>
 
-            <label for="mun">Municipio: </label><input type="text"><br> <br>
+            <label for="seccion">Sección: </label>
+            <input type="text" id="seccion" name="secc"><br> <br>
 
-            <label for="provincia">Provincia: </label><input type="text"><br> <br>
+            <label for="municipio">Municipio: </label>
+            <input type="text" id="municipio" name="mun"><br> <br>
 
-            <label for="pais">País de nacionalidad: 
-                <select id="pais">
+            <label for="provincia">Provincia: </label>
+            <input type="text" id="provincia" name="prov"><br> <br>
+
+            <label for="paises">País de nacionalidad: 
+                <select id="paises" name="pais">
                     <option value="vacio"></option>
                 <option value="rd">República Dominicana</option>
                <option value="venezuela">Venezuela</option>
@@ -206,21 +220,31 @@
                 </select>
             </label><br> <br>
 
-            <label for="telresidencial">Teléfono residencial: </label><input type="text"><br> <br>
+            <label for="telresidencial">Teléfono residencial: </label>
+            <input type="text" id="telresidencial" name="telf_res"><br> <br>
 
-            <label for="telmovil">Teléfono móvil: </label><input type="text"><br> <br>
+            <label for="telmovil">Teléfono móvil: </label>
+            <input type="text" id="telmovil" name="telf_mov"><br> <br>
 
-            <label for="licenciacon">Posee licencia de conducir </label><input type="checkbox"><br> <br>
+            <label for="licenciacon">Posee licencia de conducir </label>
+            <input type="checkbox" id="licenciacon" name="lic"><br> <br>
 
-            <label for="vehiculo">Posee vehículo propio: </label><input type="checkbox"><br> <br>
+            <label for="vehiculo">Posee vehículo propio: </label>
+            <input type="checkbox" id="vehiculo" name="veh"><br> <br>
 
-            <label for="email">Email: </label><input type="text"><br> <br>
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="mail"><br> <br>
 
-            <label for="email">Confirmación de email: </label><input type="text"><br> <br>
+            <label for="email">Confirmación de email: </label>
+            <input type="text"><br> <br>
 
-            <label for="contra">Elige una contraseña: </label><input type="password"><br> <br>
 
-            <label for="contra">Confirmar contraseña: </label><input type="password"><br> <br>
+            <label for="contra">Elige una contraseña: </label>
+            <input type="password" id="contra" name="clave"><br> <br>
+
+
+            <label for="contra">Confirmar contraseña: </label>
+            <input type="password"><br> <br>
             
             <br>
             
@@ -281,18 +305,7 @@
             </footer>
 
 
- <?php
-require "connection.php";
-insertar($mysqli);
-function insertar  ($mysqli) {
-  $nom = $_POST['nombre']?? null;
-  $pass = $_POST['contrasena']?? null;
-  $nac = $_POST['nacimiento']?? null;
 
-$query =  "INSERT INTO alumno_dapersonales(nombre, contrasena, nacimiento) VALUES ('$nom', '$pass', '$nac');";
-mysqli_query($mysqli,$query);
-}
- ?>
 
 </body>
 </html>
