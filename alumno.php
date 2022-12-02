@@ -254,8 +254,8 @@
             
             </form>
             <form action="alumnos_delete.php" method="POST">
-    <h1>eliminacion de vacantes</h1>
-<label >ID de la vacante a eliminar</label>
+    <h1>eliminacion de alumnos</h1>
+<label >ID del alumno a eliminar</label>
 <input type="text" name="id">
 <br><br>
 <button>eliminar</button>
@@ -264,7 +264,7 @@
 
 
 <form action="alumnos_datos.php" method="POST">
-    <h1>Actualizacion de vacantes</h1>
+    <h1>Actualizacion de alumnos</h1>
 <label >ID de la vacante a actualizar</label>
 <input type="text" name="id">
 <br><br>
@@ -274,7 +274,7 @@
 
 
 <form action="alumno_buscar.php" method="POST">
-    <h1>Busqueda de vacantes</h1>
+    <h1>Busqueda de alumnos</h1>
 <label >ID de la vacante a buscar</label>
 <input type="text" name="id">
 <br><br>
