@@ -176,7 +176,6 @@
 
             <label for="sexo">sexo: 
                 <select id="sexo">
-                    <option value="vacio"></option>
                     <option value="fem">femenino</option>
                 <option value="masc">masculino</option>
                <option value="ni">prefiero no decirlo</option>

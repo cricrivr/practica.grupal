@@ -37,7 +37,7 @@
 require("connection.php");
 $nombre=$_REQUEST["nom_empresa"];
 $query= "SELECT * FROM empresa WHERE nom_empresa LIKE '%$nombre%' or id='$nombre'";
-$data = mysqli_query($conexion, $query);
+$data = mysqli_query($mysqli, $query);
 $total = mysqli_num_rows($data);
 
 if ($total!=0) {

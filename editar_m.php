@@ -2,23 +2,23 @@
 
 include_once 'connection.php';
 
-$cod = $_POST['id'];
-$nom = $_POST['nom'];
-$rnc = $_POST['rnc'];
-$iden= $_POST['iden'];
-$dep = $_POST['dep'];
-$alcance= $_POST['alcance'];
-$act_eco = $_POST['act_e'];
-$ind = $_POST['indu'];
-$tamn = $_POST['tam'];
-$direccion = $_POST['dire'];
-$sector = $_POST['sec'];
-$seccion = $_POST['secc'];
-$municipio = $_POST['muni'];
-$provincia = $_POST['prov'];
-$pais = $_POST['pais'];
-$tel_prin = $_POST['telf1'];
-$tel_direc = $_POST['telf2'];
+$cod =     $_REQUEST['id'];
+$nom =     $_REQUEST['nom'];
+$rnc =     $_REQUEST['rnc'];
+$iden=     $_REQUEST['iden'];
+$dep =     $_REQUEST['dep'];
+$alcance=  $_REQUEST['alcance'];
+$act_eco = $_REQUEST['act_e'];
+$ind =     $_REQUEST['indu'];
+$tamn =    $_REQUEST['tam'];
+$direccion=$_REQUEST['dire'];
+$sector =  $_REQUEST['sec'];
+$seccion = $_REQUEST['secc'];
+$municipio=$_REQUEST['muni'];
+$provincia=$_REQUEST['prov'];
+$pais =    $_REQUEST['pais'];
+$tel_prin =$_REQUEST['telf1'];
+$tel_direc=$_REQUEST['telf2'];
 //email y contra: variables de confirmacion y original
 $email = $_POST['mail'];
 $email_C = $_POST['emailconf'];
