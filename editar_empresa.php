@@ -88,7 +88,7 @@ if ($resultcheck > 0) {
         <br>  cambiar a :
 </Label>
 <br>
-<INPUT TYPE="radio" NAME="iden" VALUE="1" TRUE >SI
+<INPUT TYPE="radio" NAME="iden" VALUE="1" checked >SI
 <INPUT TYPE="radio" NAME="iden" VALUE="0">NO
 <br>
 <br>
@@ -107,7 +107,7 @@ if ($d == 1) {
 
 </Label>
 <br>
-<INPUT TYPE="radio" NAME="dep" VALUE="1" >SI
+<INPUT TYPE="radio" NAME="dep" VALUE="1" checked>SI
 <INPUT TYPE="radio" NAME="dep" VALUE="0">NO
 <br>
 <br>
@@ -127,14 +127,16 @@ if ($d == 1) {
 
 </Label>
 <br>
-<INPUT TYPE="radio" NAME="alcance" VALUE="0">Nacional/local
+<INPUT TYPE="radio" NAME="alcance" VALUE="0" checked>Nacional/local
 <INPUT TYPE="radio" NAME="alcance" VALUE="1">Multinacional
 <br>
 <br>
 
-<Label>Actividad económica a la que se dedica la empresa </Label>
+<Label>Actividad económica a la que se dedica la empresa:
+    <br> <b><?php echo $f?></b> <br><br> cambiar a:
+</Label>
 <br>
-<TEXTAREA COLS="50" ROWS="4" NAME="act_e"  VALUE="<?php echo $f?>" >
+<TEXTAREA COLS="50" ROWS="4" NAME="act_e"  >
 </TEXTAREA>
 <br>
 <br>
